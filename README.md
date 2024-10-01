@@ -43,7 +43,17 @@
 
 ##  Overview
 
-The lIeRC project is an advanced software solution designed to facilitate real-time network communication and data processing. It leverages POSIX threads for efficient multi-threaded operations, essential in handling multiple data streams simultaneously. Through the integration of network protocols and JSON parsing capabilities, lIeRC expertly manages asynchronous data flows, enhancing its interaction with various APIs. The use of libraries such as curl, json-c, ncurses, and pthread supports its robustness, making it a valuable tool for developers needing a reliable platform for network-based applications. The included Makefile ensures streamlined development, compilation, and maintenance of the project.
+LieRC - a fake irc chatroom you can fill with AI bots. Bots have random personalities. Add or remove as many as you would like. Even name them.
+
+* Bot personalities
+* @ mentions
+* /addbot <service> <botname> (ie: `/addbot openai bob` or `/addbot anthropic amy`)
+* /kick <botname> (ie: `/kick bob`)
+* /whois <botname> (ie: `/whois bob`)
+
+Its pretty much anarchy at this point. Edit the prompts in the .c file and run `make` again if you'd like.
+
+**PR ARE VERY WELCOME**
 
 ---
 
@@ -111,7 +121,7 @@ Build the project from source:
 
 3. Install the required dependencies:
 ```sh
-❯ gcc -o myapp main.c
+❯ make
 ```
 
 ###  Usage
@@ -119,26 +129,9 @@ Build the project from source:
 To run the project, execute the following command:
 
 ```sh
-❯ ./myapp
+❯ ./lIeRC
 ```
-
-###  Tests
-
-Execute the test suite using the following command:
-
-```sh
-❯ /* No common unit test framework in C */
-```
-
----
-
-##  Project Roadmap
-
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
-
----
+--- 
 
 ##  Contributing
 
@@ -187,7 +180,7 @@ Contributions are welcome! Here are several ways you can contribute:
 
 ##  License
 
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+GPL 3.0
 
 ---
 
